@@ -2,19 +2,23 @@
 
 a:link {
     text-decoration: none;
-color: #f6a4ce;}
+    color: #f6a4ce;
+}
 
 a:visited {
     text-decoration: none;
-color: #f6a4ce;}
+    color: #f6a4ce;
+}
 
 a:hover {
     text-decoration: none;
-color: #f6a4ce;}
+    color: #f6a4ce;
+}
 
 a:active {
     text-decoration: none;
-color: #f6a4ce;}
+    color: #f6a4ce;
+}
 
 button {
     text-decoration: none;
@@ -99,20 +103,30 @@ section {
 }
 
 a {
-color: #f6a4ce;
+    color: #f6a4ce;
 }
 
 /* formatage evenement*/
 
 .evenement {
-
     text-align: center;
 }
 
-.evenement img {
-    width: 12rem;
-
+.img {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
 }
+
+.img img {
+    box-sizing: border-box;
+    width: 25%;
+    padding: 10px;
+    max-width: 100%;
+    max-height: 30rem;
+}
+
+
 
 /* formatage presentation*/
 .presentation {
@@ -190,18 +204,6 @@ form #buttonno {
     transition: 0.4s;
 }
 
-form #buttonno:hover {
-    color: white;
-    background-color: #7a6c6f;
-    border-color: white;
-}
-
-form #buttonno:active {
-    color: white;
-    background-color: #564145;
-    border-color: white;
-}
-
 form ::placeholder {
     font-family: 'Montserrat', sans-serif;
 }
@@ -277,10 +279,15 @@ footer a:hover {
     box-shadow: inset 200px 0 0 0 #f6a4ce;
 }
 
+/* Make screen responsive*/
 
-@media screen and (max-width:599px) {
+@media screen and (max-width:555px) {
     nav {
         display: inline;
+    }
+
+    body {
+        font-weight: 600;
     }
 
 }
