@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>En mai, faites ce qui vous plait !</title>
+
+    <!--Google fonts integration-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@200;342;400;600;800&family=Satisfy&display=swap"
+        rel="stylesheet">
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--mon css-->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <nav>
+        <span class="navlink"> <a href="#linkevenement">L'événement</a></span>
+        <span class="navlink"> <a href="#linkpresentation">Qui sont les queens ?</a></span>
+        <span class="navlink"> <a href="#linkform">RSVP</a></span>
+        <span class="navlink"> <a href="#linkinfospratiques">Infos pratiques</a></span>
+    </nav>
+
+    <section class="introduction">
+        <span class="bighighlight">Save the date!</span>
+        <p> Tu es cordialement invité-e à fêter non un, mais <span class="highlight">TROIS</span> anniversaires le <span
+                class="highlight">13 mai
+                2023</span>!
+        </p>
+    </section>
+
+    <!--Section pour décrire l'événement-->
+
+    <section>
+        <div class="evenement">
+            <h2 id="linkevenement">L'événement</h2>
+            <br>
+            <p class="highlight">Heure : 17:00 - jusqu'au bout de la nuit
+                <br> Lieu : La Santa Espina (détails ci-dessous)
+            </p>
+            <p>Parce que nous serons sur un bateau, nous t'invitons à te déguiser selon le thème suivant : <span class="highlight">Bienvenue à bord !</span>
+                <br> Libre à toi de choisir ton déguisement autour de ce thème marin, nous avons hâte de voir ta créativité à l'oeuvre !
+            </p>
+            <p>Tu monteras à bord, le temps de la soirée, sur la <span class="highlight">Santa Espina</span>, petite
+                péniche nichée sur le long de la Seine à Issy-les-Moulineaux.
+                <br>Sur place : terrasse, barbecue, paddle, esprit guinguette assuré ! (feux d'artifice uniquement lors
+                des 14 juillet)
+            </p>
+            <p><img src="img/pénichejour.jpg" alt="la péniche de jour">
+                <img src="img/pénichenuit.jpg" alt="la péniche de nuit">
+                <img src="img/pénichejour2.jpg" alt="la péniche de jour">
+                <img src="img/pénichenuit2.jpg" alt="la péniche de nuit">
+            </p>
+	<p> Stayed tuned en tout cas, nous te tiendrons informé-e-s sur <a href="https://www.facebook.com/events/734943651397779/"> l'événement Facebook dédié </a> ! </p>
+        </div>
+    </section>
+
+
+    <!--Section pour décrire les queens-->
+    <section>
+        <h2 id="linkpresentation">Présentation des queens</h2>
+
+
+        <div class="presentation">
+
+            <span class="prezimage">
+                <img src="img/trombi/marie.jpg" alt="photo de Marie">
+            </span>
+            <span class="preztexte">
+                <h3>Marie</h3>
+
+                <p>La doyenne du groupe, la mythique, la légendaire, j'ai nommé Marie ! Venant droit du pays des
+                    chocolatines, (mais sans l'acceng), cette brunette fatale a élu domicile à Paris au plus grand
+                    bonheur de la populasse de la capitale.
+                    <br>Attention, il y a plusieurs Marie Vidal, mais on a la meilleure.
+                </p>
+            </span>
+        </div>
+        <div class="presentation">
+            <span class="preztexte">
+                <h3 class="setright">Gwenaëlle</h3>
+                <p class="setright">Avec sa chevelure blonde rappelant les heures d'été perdues mais que nous allons
+                    bientôt retrouver, notre douce Gwenaëlle
+                    est la preuve vivante que le réchauffement climatique est bien dû à des causes humaines car
+                    tout devient plus caliente quand Gwena rentre en piste !
+                </p>
+            </span>
+            <span class="prezimage">
+                <img src="img/trombi/gwenaelle.jpg" alt="photo de Gwenaëlle">
+            </span>
+
+        </div>
+        <div class="presentation">
+            <span class="prezimage">
+                <img src="img/trombi/claire.jpg" alt="photo de Claire">
+            </span>
+            <span class="preztexte">
+                <h3>Claire</h3>
+
+                <p>Last but not least, Claire. C'est moi qui écris les descriptions, donc c'est un peu gênant d'écrire
+                    une éloge sur moi-même lol. On va dire que je suis cool hein.</p>
+            </span>
+        </div>
+    </section>
+    <!--Formulaire d'inscription-->
+
+    <section>
+        <h2 id="linkform">Inscris-toi !</h2>
+
+        <form method="POST" action="/submit">
+            <p><label for="name">Tu t'appelles : </label>
+                <input class="form-control" type="text" placeholder="Ton nom et prénom" name="name" required>
+            <p><label for="queen">Quelle queen t'a invité ?</label>
+                <select class="form-control" name="queen" id="formqueen">
+                    <option value="">Choisis une option</option>
+                    <option value="Gwenaëlle">Queen Gwena</option>
+                    <option value="Marie">Queen Marie</option>
+                    <option value="Claire">Queen Claire</option>
+                    <option value="AllThree">Les trois, pardi !</option>
+                </select>
+            </p>
+            <p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="1" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    Coche la case si tu comptes ramener un +1
+                </label>
+            </div>
+            </p>
+            <p><label for="commentaires">Des commentaires ? </label>
+                <input class="form-control" type="text" placeholder="Nan vous êtes parfaites" name="commentaires">
+            </p>
+
+            <p><button id="buttonyes">Let's go!</button>
+        </form>
+    </section>
+    <!--Infos pratiques-->
+
+    <section class="infospratiques">
+        <h2 id="linkinfospratiques">Infos pratiques</h2>
+
+        <div>
+            <p>Les festivités se dérouleront à <span class="highlight">Issy-les-Moulineaux</span>, plus spécifiquement
+                au
+                bord de la <span class="highlight">Santa Espina</span>!
+            <p>Le plus simple, c'est de saisir l'adresse suivante sur ton GPS (ou de le localiser sur une carte comme
+                nos parents le firent fût un temps, petit-e malin-e) :</p>
+
+            <p id="adressedelaparty">194 quai de la Bataille de Stalingrad
+                <br>92130 Issy-les-Moulineaux
+            </p>
+            <p style="border:0;text-align:center;"> <iframe width="490" height="370" style="border:0;text-align:center;"
+                    loading="lazy" allowfullscreen
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJM0LHhYx65kcRf3eDfgwYlNY&key=AIzaSyBTUwqCQ3ryMLGt3AP3kSB3eUR57pgYZhA"></iframe>
+
+            </p>
+            <p>Tu y es ? Il suffit maintenant de se diriger direction la Seine, vers le local à poubelles en bois. Une
+                fois
+                arrivé-e à ce stade, une petite passerelle se présentera à toi à ta gauche. Prends-là, et tu devrais
+                avoir
+                en visu la fameuse, la belle, la magnifique <span class="highlight"> Santa Espina !</span>
+                Dans le doute, c'est la péniche avec des accents roses. Re dans le doute, si tu es en retard, suis le
+                bruit,
+                il te guidera.</p>
+            </p>
+        </div>
+    </section>
+
+    <!--Petit truc en bas pour revenir en haut de la page-->
+    <footer>
+        <a href="#top">Revenir en haut de la page</a>
+    </footer>
+
+</body>
+
+</html>
