@@ -12,7 +12,7 @@ def submit():
     comments = request.form['commentaires']
 
     # Save data to SQLite3 database
-    with sqlite3.connect('/home/claireyuan_song/data.db') as conn:
+    with sqlite3.connect('/home/claireyuan_song/queens/data.db') as conn:
         cursor = conn.cursor()
 
         # Define the SQL command to create the table
