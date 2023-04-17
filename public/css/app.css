@@ -33,10 +33,6 @@ body {
     flex-direction: column;
 }
 
-/* flex properites*/
-
-
-
 h2 {
     color: white;
     font-size: 2.2rem;
@@ -47,7 +43,6 @@ h2 {
     margin: 0.2rem;
 
 }
-
 
 h2:hover {
     font-size: 2.3rem;
@@ -60,11 +55,6 @@ h3 {
     font-size: 2rem;
     margin: 0.5rem;
 }
-
-.setright {
-    text-align: right;
-}
-
 
 
 .highlight {
@@ -127,7 +117,6 @@ a {
 }
 
 
-
 /* formatage presentation*/
 .presentation {
     display: flex;
@@ -152,6 +141,10 @@ a {
     padding: 0.2rem;
 }
 
+
+.setright {
+    text-align: right;
+}
 
 
 /* formatage formulaire d'inscription*/
@@ -190,18 +183,6 @@ form #buttonyes:active {
     color: white;
     background-color: #af005b;
     border-color: white;
-}
-
-form #buttonno {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #7a6c6f;
-    border-color: #7a6c6f;
-    border-width: 0.1rem;
-    border-style: solid;
-    border-radius: 10px;
-    transition: 0.4s;
 }
 
 form ::placeholder {
@@ -277,17 +258,4 @@ footer a {
 footer a:hover {
     color: #fff;
     box-shadow: inset 200px 0 0 0 #f6a4ce;
-}
-
-/* Make screen responsive*/
-
-@media screen and (max-width:555px) {
-    nav {
-        display: inline;
-    }
-
-    body {
-        font-weight: 600;
-    }
-
 }
